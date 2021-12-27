@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+      class A //(parent)
+           {
+              abc(){
+                return "Sumit Joshi";
+              }
+           }
+           class B extends A //(child)
+           {
+             bca(){
+               let fname="Amit";
+               let pname=super.abc();//Sumit Joshi"
+               console.log(`${fname} and ${pname} are best friends`);
+             }
+           }
+           const obj=new B();
+           obj.bca();
+        </script>
+    </head>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+          let p=new Promise((resolve,reject)=>{
+              setTimeout(()=>
+               {
+                 resolve(10)
+               },3000)
+            })
+           p.then(res=>{
+               console.log(res);//10
+               return res*5;
+           })
+           .then(res=>{
+               console.log(res);//50
+               return res*10;
+           })
+           .then(res=>{
+               console.log(res);//500
+           })
+        </script>
+    </head>
+</html>

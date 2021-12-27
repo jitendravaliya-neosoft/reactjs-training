@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        class Person{
+              constructor(name){
+                 this.name=name;
+              }
+              getName(){
+                return this.name;
+              }
+              static staticMethod(age){
+                 let name=age>30?"Sumit":"Amit";
+                 return new Person(name);
+              }
+            }
+            //How we invoke static method 
+            let xyz=Person.staticMethod(25);
+            console.log(xyz);
+            // let obj=new Person("Sumit Joshi");
+            // obj.staticMethod(56)//generate a type error
+        </script>
+    </head>
+</html>

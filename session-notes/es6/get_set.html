@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+       class Person{
+            constructor(name)
+             {
+            this.name=name;
+              }
+            get name(){
+              return this._name;
+            }
+            set name(newName){
+              newName=newName.trim();
+              if(newName===''){
+                throw "The name cannot be blank"
+              }
+              this._name=newName;
+            }
+          }
+          let person=new Person("Amit");
+          person.name="Sumit Joshi";//call set()
+          let name=person.name;//call get()
+          console.log(name)
+        </script>
+    </head>
+</html>
